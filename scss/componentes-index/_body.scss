@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+body {
+    background-color: $bg-color;
+    color: $primary-color;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: .4s;
+    }
+
+    ul {
+        list-style: none;
+    }
+}

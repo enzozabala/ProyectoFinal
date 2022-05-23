@@ -1,0 +1,33 @@
+/*INDEX.HTML*/
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/variables";
+@import "./componentes-index/body";
+@import "./componentes-index/header";
+@import "./componentes-index/gallery";
+@import "./componentes-index/cards";
+@import "./componentes-index/footer";
+@import "./componentes-fotos/fotos";
+@import "./componentes-servicios/servicios";
+@import "./componentes-contactos/contactos";
+@import "./componentes-info/info";
+
+* {
+    @extend %reset;
+}
+
+.ban {
+    border-radius: 2px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    padding: 20px;
+}
+
+.ban:hover {
+    color: #20C997;
+}
+
+/*PAGE FOTOS*/
+
+/* ----Page SERVICIOS ----*/

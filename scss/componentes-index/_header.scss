@@ -1,0 +1,165 @@
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header {
+    background-color: #000;
+    height: 80px;
+
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #777;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:white;
+    transition: 0.3s;
+}
+.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    color: #20C997;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .header {
+        height: 60px;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0%;
+        background-color: whitesmoke;
+        left: 0%;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        position: fixed;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover {
+        background: none;
+        color: #20C997;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+}
+
+@media(max-width:576px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .header {
+        height: 60px;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0%;
+        background-color: whitesmoke;
+        left: 0%;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        position: fixed;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+
+}

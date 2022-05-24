@@ -780,6 +780,7 @@ article {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
+  text-align: justify;
 }
 
 article::before {
@@ -793,12 +794,14 @@ article::before {
 }
 
 article h1 {
+  text-align: center;
   margin-top: 20px;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 600 bolder;
+  font-size: 60px;
 }
 
 article p {
+  text-align: center;
   margin-top: 20px;
   font-size: 18px;
   color: whitesmoke;

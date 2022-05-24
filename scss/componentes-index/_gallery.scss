@@ -227,3 +227,30 @@
     }
 
 }
+
+@media(max-width:425px) {
+    .gallery-card {
+        width: 80%;
+        height: 420px;
+        margin-bottom: 15px;
+        @include flex-center;
+        flex-direction: column;
+        color: $primary-color;
+    }
+    .gallery-card-tittle {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: auto;
+    
+    }
+    
+    .gallery-card-btn {
+        padding: 1rem 3rem;
+        border: 0.5px solid $secondary-color;
+        color: $primary-color;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+}

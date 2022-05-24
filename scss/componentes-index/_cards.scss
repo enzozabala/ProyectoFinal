@@ -12,6 +12,18 @@ body {
     place-items: center;
 }
 
+.ban {
+    border-radius: 2px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    padding: 20px;
+}
+
+.ban:hover {
+    color: #20C997;
+}
+
 .photos {
     width: 20%;
     height: 100%;
@@ -45,21 +57,39 @@ body {
 @media(max-width:768px) {
     .container {
         display: flex;
-        flex-direction: column;
+        align-items: center;
         image-rendering: auto;
     }
 }
 
 @media(max-width:578px) {
 
+    body {
+        place-items:center stretch;
+    }
+    
+    .photos {
+        width: 32%;
+        height: 90%;
+        object-fit: scale-down;
+        .photos:hover{
+        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+        transform-origin: center;
+        transform: perspective(800px) rotateY(25deg);
+        transition: 0.5s;}
+    }
+    
     
     .container {
-        padding-top: 100px;
-        padding-bottom: 125px;
-        max-width: 600px;
-        max-height: 100px;
+        padding: 50px;
+        max-width: 800px;
+        max-height: 800px;
         gap: 5px;
-        align-items: center;
-        display: block;
+        align-items: stretch;
+        
     }
+
+    .ban {
+        text-align: center;
+}
 }

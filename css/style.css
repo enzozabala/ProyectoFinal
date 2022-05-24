@@ -146,41 +146,17 @@ body {
   }
 }
 @media (max-width: 576px) {
-  body {
-    padding-top: 70px;
-  }
-
-  .header {
-    height: 60px;
-    z-index: 1;
-    position: fixed;
-  }
-
-  .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
-  }
-
-  .nav-menu {
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0%;
-    background-color: whitesmoke;
-    left: 0%;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    position: fixed;
-    height: calc(100% - 60px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
-  }
-
   .nav-menu-item {
-    line-height: 70px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 425px) {
+  .nav-menu-item {
+    line-height: auto;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 }
 .gallery {
@@ -414,6 +390,34 @@ body {
     color: #FFF;
   }
 }
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 80%;
+    height: 420px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+  }
+
+  .gallery-card-tittle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: auto;
+  }
+
+  .gallery-card-btn {
+    padding: 1rem 3rem;
+    border: 0.5px solid #20C997;
+    color: #FFF;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -426,6 +430,18 @@ body {
   background-color: #000;
   display: grid;
   place-items: center;
+}
+
+.ban {
+  border-radius: 2px;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  color: gray;
+  padding: 20px;
+}
+
+.ban:hover {
+  color: #20C997;
 }
 
 .photos {
@@ -460,19 +476,37 @@ body {
 @media (max-width: 768px) {
   .container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     image-rendering: auto;
   }
 }
 @media (max-width: 578px) {
+  body {
+    place-items: center stretch;
+  }
+
+  .photos {
+    width: 32%;
+    height: 90%;
+    object-fit: scale-down;
+  }
+  .photos .photos:hover {
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+  }
+
   .container {
-    padding-top: 100px;
-    padding-bottom: 125px;
-    max-width: 600px;
-    max-height: 100px;
+    padding: 50px;
+    max-width: 800px;
+    max-height: 800px;
     gap: 5px;
-    align-items: center;
-    display: block;
+    align-items: stretch;
+  }
+
+  .ban {
+    text-align: center;
   }
 }
 footer {
@@ -810,18 +844,6 @@ span {
     overflow: hidden;
   }
 }
-.ban {
-  border-radius: 2px;
-  font-weight: 500;
-  font-family: "Courier New", Courier, monospace;
-  color: gray;
-  padding: 20px;
-}
-
-.ban:hover {
-  color: #20C997;
-}
-
 /*PAGE FOTOS*/
 /* ----Page SERVICIOS ----*/
 

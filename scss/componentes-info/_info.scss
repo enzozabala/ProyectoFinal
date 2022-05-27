@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
-
 /*Contenido del articulo de informacion page*/
 
 .container-content {
@@ -61,6 +59,8 @@ span {
 }
 
 
+/* media pantalla iphone 12*/
+
 @media(max-width:768px) {
     .container-content {
         width: 768px;
@@ -111,11 +111,10 @@ span {
     article {
         width: 100%;
         padding: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
         box-shadow: -2px 0 -15px black;
-        position: relative;
-        border-radius: 5px;
-        overflow: hidden;
-    }
 
+
+
+}
 }

@@ -32,3 +32,17 @@ span {
         }
     }
 }
+
+@media (max-width:390px){
+    footer {
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+    
+    }
+}
+
+p{
+    margin-top: 30px;
+}

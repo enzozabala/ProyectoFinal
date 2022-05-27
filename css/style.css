@@ -29,6 +29,7 @@ body {
 .header {
   background-color: #000;
   height: 80px;
+  max-width: 1000px;
   width: 100%;
   top: 0%;
   left: 0%;
@@ -37,7 +38,8 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 992px;
+  overflow-y: hidden;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -526,10 +528,10 @@ body {
 
   .container {
     width: 80%;
-    padding: 0;
+    padding: 100px;
     max-width: 800px;
     max-height: 800px;
-    gap: 0;
+    gap: 5px;
     align-items: center;
     margin-bottom: 20px;
   }
@@ -651,7 +653,6 @@ p {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -663,7 +664,7 @@ body {
 }
 
 .titulo {
-  margin-top: 55px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -673,23 +674,23 @@ body {
 }
 
 .container {
-  margin-top: 0;
+  margin-top: 20px;
+  height: 100%;
   width: 100%;
-  max-width: 150px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
 }
 
 .container .card {
-  width: 200px;
-  height: 200px;
+  gap: 10px;
+  width: 330px;
+  height: 600px;
   border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 0;
+  box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+  margin: 5px;
   text-align: center;
   transition: all 0.25s;
 }
@@ -701,7 +702,7 @@ body {
 
 .container .card img {
   width: 350px;
-  height: 320px;
+  height: 420px;
 }
 
 .container .card h4 {
@@ -717,12 +718,55 @@ body {
   color: #20C997;
 }
 
-@media (max-width: 578px) {
+@media (max-width: 390px) {
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    display: block;
+  }
+
   .titulo {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .container {
+    display: contents;
+  }
+
+  .container .card {
+    text-align: center;
+    width: 320px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .card img {
+    margin-right: 30px;
+    align-items: center;
+    width: 320px;
+    height: 300px;
+  }
+
+  .container .card a {
+    padding: 2%;
+    font-weight: 500;
+    text-decoration: none;
+    color: #20C997;
+  }
+}
+@media (max-width: 578px) {
+  .titulo {
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     display: block;
@@ -730,19 +774,23 @@ body {
   }
 
   .container .card {
-    width: 500px;
-    height: 500px;
-    margin: 7%;
+    width: 100%;
+    height: 50%;
+    margin: 0;
   }
 
   .container .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(30px);
+    box-shadow: 0 6px 8px black;
+  }
+
+  p {
+    margin-top: 1px;
   }
 
   .container .card img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 250px;
   }
 
   .container .card h4 {
@@ -752,8 +800,8 @@ body {
   }
 
   .container .card a {
-    margin-top: 7px;
-    font-weight: 400;
+    margin-top: 15px;
+    font-weight: 800;
     text-decoration: none;
     color: #20C997;
   }
@@ -884,16 +932,9 @@ span {
   article {
     width: 100%;
     padding: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     box-shadow: -2px 0 -15px black;
   }
 }
-html, body {
-  width: 100% !important;
-  overflow-x: hidden !important;
-}
-
-/*PAGE FOTOS*/
-/* ----Page SERVICIOS ----*/
 
 /*# sourceMappingURL=style.css.map */
